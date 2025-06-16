@@ -1,0 +1,1 @@
+# Talent Scraper package initialization

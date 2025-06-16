@@ -34,6 +34,9 @@ venv/
 env/
 ENV/
 .venv/
+.venv-new/
+env.bak/
+venv.bak/
 
 # IDE
 .vscode/
@@ -41,13 +44,36 @@ ENV/
 *.swp
 *.swo
 *~
+*.code-workspace
+.history/
 
 # OS
 .DS_Store
 Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 
 # Logs
 *.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+pytest-report.html
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Project specific
+LearningStuff-ignore/
 logs/
 
 # Dependencies
