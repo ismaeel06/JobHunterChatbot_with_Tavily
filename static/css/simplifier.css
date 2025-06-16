@@ -33,6 +33,47 @@
     color: #333;
 }
 
+/* Technical term highlight style */
+.technical-term-highlight {
+    border-bottom: 2px dotted #1a73e8;  /* Thicker, more noticeable dotted underline */
+    background-color: rgba(26, 115, 232, 0.08);  /* Light blue background */
+    padding: 0 1px;  /* Small padding to make the highlight extend slightly */
+    color: #0d47a1;  /* Slightly darker blue for the text */
+    cursor: help;  /* Help cursor indicates an explanation is available */
+    display: inline;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;  /* Slightly bolder text */
+}
+
+.technical-term-highlight:hover {
+    background-color: rgba(26, 115, 232, 0.15);  /* Darker background on hover */
+    border-bottom: 2px dotted #0d47a1;  /* Darker border on hover */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+/* Position-based styling for tooltips */
+.term-simplifier-tooltip.position-above::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid white;
+}
+
+.term-simplifier-tooltip.position-below::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
